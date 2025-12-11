@@ -21,12 +21,17 @@ export default function Footer() {
           <div>
             <h4>Contact</h4>
             <p><a href="tel:951-218-5925">(951) 218-5925</a></p>
-                      </div>
-
+            <p><a href="mailto:email@pastormywedding.com">email@pastormywedding.com</a></p>
+          </div>
         </div>
 
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Pastor My Wedding. All rights reserved.</p>
+          <p className="footer-legal">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <span className="footer-divider">|</span>
+            <Link href="/terms">Terms of Service</Link>
+          </p>
         </div>
       </div>
     </footer>
