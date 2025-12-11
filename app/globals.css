@@ -1156,7 +1156,17 @@ img {
 
 /* Bio page hero */
 .page-hero-bio {
-  background-image: url('/images/jeff1.jpg');
+  background-image: url('/images/jeff2.jpg');
+}
+
+.bio-text-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bio-text-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 /* Bio bottom layout - family photo + CTA side by side */

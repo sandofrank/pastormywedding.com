@@ -29,55 +29,43 @@ export default function BioPage() {
       </section>
 
       <section className="section">
-        <div className="container">
-          <div className="about-content">
-            <div className="about-image">
-              <Image
-                src="/images/jeff2.jpg"
-                alt="Pastor Jeff Johnson - Wedding Officiant"
-                width={500}
-                height={400}
-              />
-            </div>
-            <div className="about-text">
-              <h2>Simply His Servant, Jeff</h2>
+        <div className="container bio-text-section">
+          <h2>Simply His Servant, Jeff</h2>
 
-              <p>
-                Hello, and thank you for your interest in Pastor My Wedding. My name is Jeff Johnson
-                and God has allowed me to begin this work through His grace and strength.
-              </p>
+          <p>
+            Hello, and thank you for your interest in Pastor My Wedding. My name is Jeff Johnson
+            and God has allowed me to begin this work through His grace and strength.
+          </p>
 
-              <ul className="about-list">
-                <li>
-                  <strong>Wife:</strong> Christy Johnson (married December 1986)
-                </li>
-                <li>
-                  <strong>Children:</strong> 3 Sons, 1 Daughter, and 2 Daughters-in-law
-                </li>
-                <li>
-                  <strong>Grandchildren:</strong> 4 Granddaughters and 1 Grandson
-                </li>
-              </ul>
+          <ul className="about-list">
+            <li>
+              <strong>Wife:</strong> Christy Johnson (married December 1986)
+            </li>
+            <li>
+              <strong>Children:</strong> 3 Sons, 1 Daughter, and 2 Daughters-in-law
+            </li>
+            <li>
+              <strong>Grandchildren:</strong> 4 Granddaughters and 1 Grandson
+            </li>
+          </ul>
 
-              <p>
-                I have served as a senior pastor, youth pastor and missions pastor throughout my
-                ministry. My family and I have ministered all over the world including America,
-                Indonesia, Africa, Cambodia, Mexico, and Russia.
-              </p>
+          <p>
+            I have served as a senior pastor, youth pastor and missions pastor throughout my
+            ministry. My family and I have ministered all over the world including America,
+            Indonesia, Africa, Cambodia, Mexico, and Russia.
+          </p>
 
-              <p>
-                One of my biggest joys is to be a part of two people committing their lives and
-                families to one another. I find it a great honor and privilege and I am thankful for
-                the opportunity to be a part of this special day.
-              </p>
+          <p>
+            One of my biggest joys is to be a part of two people committing their lives and
+            families to one another. I find it a great honor and privilege and I am thankful for
+            the opportunity to be a part of this special day.
+          </p>
 
-              <p>
-                Every ceremony I perform is crafted with care, tailored to reflect your unique love story.
-                Whether you prefer a traditional Christian ceremony or a non-denominational celebration,
-                I work closely with each couple to ensure your special day is exactly as you envision it.
-              </p>
-            </div>
-          </div>
+          <p>
+            Every ceremony I perform is crafted with care, tailored to reflect your unique love story.
+            Whether you prefer a traditional Christian ceremony or a non-denominational celebration,
+            I work closely with each couple to ensure your special day is exactly as you envision it.
+          </p>
         </div>
       </section>
 
