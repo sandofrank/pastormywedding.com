@@ -1615,11 +1615,11 @@ img {
     gap: 0.25rem;
     text-align: center;
   }
+}
 
-  .qr-codes {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Keep QR codes side by side in contact cards even on mobile */
+.contact-card .qr-codes {
+  flex-direction: row !important;
 }
 
 /* ========== MAIN CONTENT ========== */
