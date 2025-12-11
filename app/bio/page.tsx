@@ -59,6 +59,15 @@ export default function BioPage() {
                 </li>
               </ul>
 
+              <div className="family-photo">
+                <Image
+                  src="/images/family.jpg"
+                  alt="Pastor Jeff Johnson and his family"
+                  width={600}
+                  height={400}
+                />
+              </div>
+
               <p>
                 I have served as a senior pastor, youth pastor and missions pastor throughout my
                 ministry.
