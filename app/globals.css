@@ -1154,9 +1154,44 @@ img {
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
-/* Bio page hero */
-.page-hero-bio {
-  background-image: url('/images/jeff1.jpg');
+/* Bio page hero - family photo */
+.bio-hero-family {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  min-height: 350px;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.bio-hero-family-img {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.bio-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
+  color: white;
+  text-align: center;
+}
+
+.bio-hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.bio-hero-overlay p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 /* Reviews page hero */
@@ -1358,6 +1393,19 @@ img {
 
   h3 {
     font-size: 1.25rem;
+  }
+
+  .bio-hero-family {
+    height: 40vh;
+    min-height: 280px;
+  }
+
+  .bio-hero-overlay h1 {
+    font-size: 1.75rem;
+  }
+
+  .bio-hero-overlay p {
+    font-size: 1rem;
   }
 
   .hero h1 {
