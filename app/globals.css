@@ -854,6 +854,13 @@ img {
   padding: 0.25rem;
   background: transparent;
   box-shadow: none;
+  flex-shrink: 0;
+}
+
+.contact-card .qr-code img {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: contain;
 }
 
 .contact-card .qr-code:hover {
