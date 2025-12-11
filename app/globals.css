@@ -1177,7 +1177,6 @@ img {
   justify-content: flex-end;
   align-items: center;
   padding: 2rem;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.2) 100%);
   color: white;
   text-align: center;
 }
@@ -1185,13 +1184,16 @@ img {
 .bio-hero-overlay h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.75);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
 }
 
 .bio-hero-overlay p {
   font-size: 1.1rem;
-  opacity: 0.95;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.75);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
 }
 
 /* Reviews page hero */
