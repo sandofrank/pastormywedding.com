@@ -27,8 +27,8 @@ export default function ContactPage() {
 We would like to check your availability for our wedding.
 
 COUPLE INFORMATION:
-- Name: ${name}
-- Partner's Name: ${partner}
+- Bride's Name: ${name}
+- Groom's Name: ${partner}
 - Email: ${email}
 - Phone: ${phone}
 
@@ -70,11 +70,11 @@ ${name} & ${partner}`;
               <form onSubmit={handleSubmit}>
                 <div className="form-row">
                   <div className="form-group">
-                    <label htmlFor="name">Your Name *</label>
+                    <label htmlFor="name">Bride&apos;s Name *</label>
                     <input type="text" id="name" name="name" required />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="partner">Partner&apos;s Name *</label>
+                    <label htmlFor="partner">Groom&apos;s Name *</label>
                     <input type="text" id="partner" name="partner" required />
                   </div>
                 </div>
