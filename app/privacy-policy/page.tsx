@@ -117,6 +117,13 @@ export default function PrivacyPolicyPage() {
               your personal information. We do not sell personal information.
             </p>
 
+            <h2>Florida Privacy Rights</h2>
+            <p>
+              If you are a Florida resident, you may have additional privacy rights under applicable
+              Florida law. We are committed to protecting the privacy of all our clients, regardless
+              of location.
+            </p>
+
             <h2>Children&apos;s Privacy</h2>
             <p>
               Our website and services are not directed to individuals under 18 years of age. We do

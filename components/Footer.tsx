@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-content">
           <div>
             <h4>Pastor My Wedding</h4>
-            <p>Professional wedding officiant serving the Temecula Valley and surrounding areas for over 20 years.</p>
+            <p>Professional wedding officiant serving Temecula Wine Country, CA and The Villages, FL 32162 for over 20 years.</p>
           </div>
 
           <div>

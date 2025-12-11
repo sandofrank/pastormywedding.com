@@ -7,11 +7,11 @@ import CookieConsent from "@/components/CookieConsent";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.pastormywedding.com"),
   title: {
-    default: "Temecula Wedding Officiant | Pastor My Wedding | Wine Country Ceremonies",
+    default: "Wedding Officiant | Pastor My Wedding | Temecula & The Villages, FL",
     template: "%s | Pastor My Wedding",
   },
   description:
-    "Pastor Jeff Johnson - Temecula Wine Country's trusted wedding officiant for over 20 years. Serving Temecula Valley wineries, Murrieta, Menifee, Wildomar, Lake Elsinore & all of Southern California. Personalized Christian & non-denominational ceremonies.",
+    "Pastor Jeff Johnson - Trusted wedding officiant for over 20 years. Serving Temecula Wine Country, CA and The Villages, FL 32162. Personalized Christian & non-denominational ceremonies.",
   keywords: [
     "Temecula wedding officiant",
     "Temecula Wine Country wedding",
@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     "Wildomar wedding officiant",
     "Lake Elsinore wedding officiant",
     "Southern California wedding officiant",
+    "The Villages wedding officiant",
+    "The Villages FL wedding",
+    "Florida wedding officiant",
+    "Central Florida wedding officiant",
     "Christian wedding officiant",
     "non-denominational wedding",
     "wedding ceremony Temecula",
@@ -43,9 +47,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Temecula Wedding Officiant | Pastor My Wedding",
+    title: "Wedding Officiant | Pastor My Wedding | Temecula & The Villages, FL",
     description:
-      "Pastor Jeff Johnson - Temecula Wine Country's trusted wedding officiant for over 20 years. Professional, personable ceremonies at wineries throughout the valley.",
+      "Pastor Jeff Johnson - Trusted wedding officiant for over 20 years serving Temecula Wine Country, CA and The Villages, FL 32162.",
     url: "https://www.pastormywedding.com",
     siteName: "Pastor My Wedding",
     locale: "en_US",
@@ -55,15 +59,15 @@ export const metadata: Metadata = {
         url: "/images/pastor-jeff.jpg",
         width: 800,
         height: 600,
-        alt: "Pastor Jeff Johnson - Temecula Wedding Officiant",
+        alt: "Pastor Jeff Johnson - Wedding Officiant",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Temecula Wedding Officiant | Pastor My Wedding",
+    title: "Wedding Officiant | Pastor My Wedding | Temecula & The Villages, FL",
     description:
-      "Pastor Jeff Johnson - Temecula Wine Country's trusted wedding officiant for over 20 years.",
+      "Pastor Jeff Johnson - Trusted wedding officiant for over 20 years serving Temecula, CA and The Villages, FL.",
     images: ["/images/pastor-jeff.jpg"],
   },
   robots: {
@@ -91,7 +95,7 @@ const jsonLd = {
   name: "Pastor My Wedding",
   image: "https://www.pastormywedding.com/images/pastor-jeff.jpg",
   description:
-    "Professional wedding officiant serving Temecula Wine Country and Southern California for over 20 years. Christian and non-denominational ceremonies.",
+    "Professional wedding officiant serving Temecula Wine Country, CA and The Villages, FL for over 20 years. Christian and non-denominational ceremonies.",
   url: "https://www.pastormywedding.com",
   telephone: "+1-951-218-5925",
   email: "email@pastormywedding.com",
@@ -105,6 +109,9 @@ const jsonLd = {
     { "@type": "City", name: "Hemet" },
     { "@type": "City", name: "San Diego" },
     { "@type": "State", name: "California" },
+    { "@type": "City", name: "The Villages" },
+    { "@type": "PostalCode", name: "32162" },
+    { "@type": "State", name: "Florida" },
   ],
   priceRange: "$400-$600",
   sameAs: [],

@@ -59,7 +59,7 @@ ${name} & ${partner}`;
       <section className="page-hero-image page-hero-contact">
         <div className="container">
           <h1>Schedule Your Wedding</h1>
-          <p>Book Pastor Jeff for your Temecula Wine Country ceremony</p>
+          <p>Book Pastor Jeff in Temecula Wine Country or The Villages, FL</p>
         </div>
       </section>
 

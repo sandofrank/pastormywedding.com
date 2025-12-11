@@ -7,7 +7,7 @@ export default function Home() {
       <section className="hero">
         <div className="container">
           <h1>A Ceremony Worth Remembering</h1>
-          <p className="hero-subtitle">Temecula Wine Country Wedding Officiant</p>
+          <p className="hero-subtitle">Temecula Wine Country &amp; The Villages, FL Wedding Officiant</p>
           <Link href="/contact" className="btn">
             Schedule Your Wedding
           </Link>
@@ -30,7 +30,7 @@ export default function Home() {
               <h2>Dear Bride and Groom</h2>
               <p>
                 Pastor Jeff Johnson has been a trusted wedding officiant serving the Temecula Valley
-                and surrounding area for over 20 years. He takes the marriage ceremony serious and
+                and The Villages, Florida for over 20 years. He takes the marriage ceremony serious and
                 yet adds personal touches to make it special and unique for each couple.
               </p>
               <p>
@@ -153,7 +153,7 @@ export default function Home() {
           <h2>Creating Memories That Last</h2>
           <p>
             For over 20 years, Pastor Jeff has had the privilege of officiating hundreds of weddings
-            throughout Temecula Wine Country and Southern California. Each ceremony is crafted with
+            throughout Temecula Wine Country, Southern California, and The Villages, Florida. Each ceremony is crafted with
             care, honoring the unique love story of every couple.
           </p>
           <p>

@@ -3,16 +3,16 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Pastor Jeff Johnson | Temecula Wedding Officiant",
+  title: "About Pastor Jeff Johnson | Temecula & The Villages, FL Wedding Officiant",
   description:
-    "Meet Pastor Jeff Johnson, a trusted Temecula Wine Country wedding officiant with over 20 years of experience. Serving couples throughout Southern California with personalized Christian and non-denominational ceremonies.",
+    "Meet Pastor Jeff Johnson, a trusted wedding officiant with over 20 years of experience. Serving couples in Temecula Wine Country, CA and The Villages, FL with personalized Christian and non-denominational ceremonies.",
   alternates: {
     canonical: "https://www.pastormywedding.com/bio",
   },
   openGraph: {
-    title: "About Pastor Jeff Johnson | Temecula Wedding Officiant",
+    title: "About Pastor Jeff Johnson | Temecula & The Villages, FL Wedding Officiant",
     description:
-      "Meet Pastor Jeff Johnson, a trusted Temecula Wine Country wedding officiant with over 20 years of experience.",
+      "Meet Pastor Jeff Johnson, a trusted wedding officiant with over 20 years of experience serving Temecula Wine Country, CA and The Villages, FL.",
     url: "https://www.pastormywedding.com/bio",
   },
 };
@@ -23,7 +23,7 @@ export default function BioPage() {
       <section className="page-hero-image page-hero-bio">
         <div className="container">
           <h1>About Pastor Jeff Johnson</h1>
-          <p>Your trusted wedding officiant in Temecula Wine Country</p>
+          <p>Your trusted wedding officiant in Temecula Wine Country &amp; The Villages, FL</p>
         </div>
       </section>
 
@@ -89,8 +89,8 @@ export default function BioPage() {
             <div className="service-card">
               <h3>20+ Years Experience</h3>
               <p>
-                Pastor Jeff has been officiating weddings in the Temecula Valley and surrounding
-                areas for over two decades, bringing professionalism and heartfelt ceremonies to
+                Pastor Jeff has been officiating weddings in the Temecula Valley, Southern California,
+                and The Villages, Florida for over two decades, bringing professionalism and heartfelt ceremonies to
                 hundreds of couples.
               </p>
             </div>

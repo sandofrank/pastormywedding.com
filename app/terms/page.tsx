@@ -31,10 +31,10 @@ export default function TermsPage() {
 
             <h2>2. Description of Services</h2>
             <p>
-              Pastor My Wedding provides wedding officiant services in the Temecula Valley and
-              surrounding areas of Southern California. Our website provides information about our
-              services, pricing, and allows potential clients to contact us regarding their wedding
-              ceremonies.
+              Pastor My Wedding provides wedding officiant services in the Temecula Valley,
+              Southern California, and The Villages, Florida (32162). Our website provides information
+              about our services, pricing, and allows potential clients to contact us regarding their
+              wedding ceremonies.
             </p>
 
             <h2>3. Use License</h2>
@@ -142,8 +142,10 @@ export default function TermsPage() {
             <h2>11. Governing Law</h2>
             <p>
               These Terms of Service are governed by and construed in accordance with the laws of
-              the State of California, and you irrevocably submit to the exclusive jurisdiction of
-              the courts in Riverside County, California.
+              the State of California or the State of Florida, depending on the location of the
+              services provided. For California services, you submit to the exclusive jurisdiction
+              of the courts in Riverside County, California. For Florida services, you submit to
+              the exclusive jurisdiction of the courts in Sumter County, Florida.
             </p>
 
             <h2>12. Severability</h2>
