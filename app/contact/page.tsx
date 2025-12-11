@@ -178,11 +178,11 @@ ${name} & ${partner}`;
                 <p>Secure your date with Venmo or PayPal.</p>
                 <div className="qr-codes-inline">
                   <div className="qr-item">
-                    <Image src="/images/qr-venmo.png" alt="Venmo QR Code" width={70} height={70} />
+                    <Image src="/images/qr-venmo.png" alt="Venmo QR Code" width={100} height={100} />
                     <span>Venmo</span>
                   </div>
                   <div className="qr-item">
-                    <Image src="/images/qr-paypal.png" alt="PayPal QR Code" width={70} height={70} />
+                    <Image src="/images/qr-paypal.png" alt="PayPal QR Code" width={100} height={100} />
                     <span>PayPal</span>
                   </div>
                 </div>
