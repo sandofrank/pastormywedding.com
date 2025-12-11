@@ -59,100 +59,60 @@ ${name} & ${partner}`;
         </div>
       </section>
 
-      <section className="section">
+      {/* Main Contact Form Section */}
+      <section className="section" id="check-availability">
         <div className="container">
-          <div className="contact-section">
-            <div className="contact-info">
-              <h2>Get In Touch</h2>
-              <p>
-                Ready to book Pastor Jeff for your wedding? Fill out the form or contact us
-                directly.
-              </p>
+          <div className="section-header">
+            <h2>Check Availability</h2>
+            <p>Fill out the form below and we&apos;ll get back to you within 24 hours</p>
+          </div>
 
-              <h3 className="mt-4">Contact Information</h3>
-              <p>
-                <strong>Phone:</strong> <a href="tel:951-218-5925">(951) 218-5925</a>
-              </p>
-              <p>
-                <strong>Email:</strong>{" "}
-                <a href="mailto:email@pastormywedding.com">email@pastormywedding.com</a>
-              </p>
-
-              <h3 id="payment" className="mt-4">
-                Payment Options
-              </h3>
-              <p>
-                We accept payment via <strong>Venmo</strong> or <strong>PayPal</strong> for your
-                convenience.
-              </p>
-              <div className="qr-codes">
-                <div className="qr-code">
-                  <Image src="/images/qr-venmo.png" alt="Venmo QR Code" width={120} height={120} />
-                  <p>Venmo</p>
-                </div>
-                <div className="qr-code">
-                  <Image src="/images/qr-paypal.png" alt="PayPal QR Code" width={120} height={120} />
-                  <p>PayPal</p>
-                </div>
-              </div>
-
-              <h3 className="mt-4">Pricing</h3>
-              <ul className="pricing-list">
-                <li>
-                  Wedding Ceremony (no rehearsal): <strong>$400</strong>
-                </li>
-                <li>
-                  Wedding Ceremony + Rehearsal: <strong>$500</strong>
-                </li>
-                <li>
-                  Extended Package (with location fee): <strong>$600</strong>
-                </li>
-              </ul>
-            </div>
-
-            <div className="contact-form" id="check-availability">
-              <h3 className="mb-3">Check Availability</h3>
-              <form onSubmit={handleSubmit}>
+          <div className="contact-form-wrapper">
+            <form onSubmit={handleSubmit} className="contact-form-main">
+              <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="name">Your Name *</label>
                   <input type="text" id="name" name="name" required />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="partner">Partner&apos;s Name *</label>
                   <input type="text" id="partner" name="partner" required />
                 </div>
+              </div>
 
+              <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="email">Email Address *</label>
                   <input type="email" id="email" name="email" required />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="phone">Phone Number *</label>
                   <input type="tel" id="phone" name="phone" required />
                 </div>
+              </div>
 
+              <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="date">Wedding Date *</label>
                   <input type="date" id="date" name="date" required />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="time">Ceremony Time</label>
                   <input type="time" id="time" name="time" />
                 </div>
+              </div>
 
-                <div className="form-group">
-                  <label htmlFor="venue">Venue Name &amp; Location</label>
-                  <input
-                    type="text"
-                    id="venue"
-                    name="venue"
-                    placeholder="e.g., Faulkner Winery, Temecula"
-                  />
-                </div>
+              <div className="form-group">
+                <label htmlFor="venue">Venue Name &amp; Location</label>
+                <input
+                  type="text"
+                  id="venue"
+                  name="venue"
+                  placeholder="e.g., Faulkner Winery, Temecula"
+                />
+              </div>
 
+              <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="package">Package Interest</label>
                   <select id="package" name="package">
@@ -163,16 +123,6 @@ ${name} & ${partner}`;
                     <option value="unsure">Not sure yet</option>
                   </select>
                 </div>
-
-                <div className="form-group">
-                  <label htmlFor="message">Additional Details</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell us about your wedding plans, any special requests, or questions you have..."
-                  ></textarea>
-                </div>
-
                 <div className="form-group">
                   <label htmlFor="referral">How did you hear about us?</label>
                   <select id="referral" name="referral">
@@ -185,40 +135,107 @@ ${name} & ${partner}`;
                     <option value="other">Other</option>
                   </select>
                 </div>
+              </div>
 
-                <button type="submit" className="btn btn-block">
-                  Check Availability
-                </button>
-              </form>
+              <div className="form-group">
+                <label htmlFor="message">Additional Details</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={4}
+                  placeholder="Tell us about your wedding plans, any special requests, or questions you have..."
+                ></textarea>
+              </div>
+
+              <button type="submit" className="btn btn-block">
+                Send Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Info & Pricing Cards */}
+      <section className="section section-alt">
+        <div className="container">
+          <div className="contact-cards">
+            <div className="contact-card">
+              <h3>Contact Directly</h3>
+              <p>Prefer to reach out directly? We&apos;re happy to hear from you.</p>
+              <div className="contact-details">
+                <a href="tel:951-218-5925" className="contact-link">
+                  <span className="contact-icon">&#9742;</span>
+                  (951) 218-5925
+                </a>
+                <a href="mailto:email@pastormywedding.com" className="contact-link">
+                  <span className="contact-icon">&#9993;</span>
+                  email@pastormywedding.com
+                </a>
+              </div>
+            </div>
+
+            <div className="contact-card">
+              <h3>Pricing</h3>
+              <ul className="pricing-list">
+                <li>
+                  <span>Wedding Ceremony</span>
+                  <strong>$400</strong>
+                </li>
+                <li>
+                  <span>Wedding + Rehearsal</span>
+                  <strong>$500</strong>
+                </li>
+                <li>
+                  <span>Extended Package</span>
+                  <strong>$600</strong>
+                </li>
+              </ul>
+            </div>
+
+            <div className="contact-card" id="payment">
+              <h3>Payment Options</h3>
+              <p>Secure your date with payment via Venmo or PayPal.</p>
+              <div className="qr-codes">
+                <div className="qr-code">
+                  <Image src="/images/qr-venmo.png" alt="Venmo QR Code" width={100} height={100} />
+                  <p>Venmo</p>
+                </div>
+                <div className="qr-code">
+                  <Image src="/images/qr-paypal.png" alt="PayPal QR Code" width={100} height={100} />
+                  <p>PayPal</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section section-alt">
+      {/* Booking Process */}
+      <section className="section">
         <div className="container">
           <div className="section-header">
-            <h2>Booking Process</h2>
+            <h2>How It Works</h2>
+            <p>Three simple steps to book your ceremony</p>
           </div>
 
           <div className="process-steps">
-            <a href="#check-availability" className="process-step">
+            <div className="process-step">
               <div className="step-number">1</div>
-              <h3>Check Availability</h3>
-              <p>Fill out the form above with your wedding date to see if Pastor Jeff is available.</p>
-            </a>
+              <h3>Submit Inquiry</h3>
+              <p>Fill out the form above with your wedding date to check availability.</p>
+            </div>
 
-            <a href="#check-availability" className="process-step">
+            <div className="process-step">
               <div className="step-number">2</div>
-              <h3>Schedule Wedding</h3>
-              <p>Once availability is confirmed, we&apos;ll collect all the details about your ceremony.</p>
-            </a>
+              <h3>Confirmation</h3>
+              <p>We&apos;ll respond within 24 hours to confirm and discuss your ceremony.</p>
+            </div>
 
-            <a href="#payment" className="process-step">
+            <div className="process-step">
               <div className="step-number">3</div>
-              <h3>Payment</h3>
-              <p>Secure your date with payment via Venmo or PayPal. You&apos;ll receive a receipt via email.</p>
-            </a>
+              <h3>Secure Your Date</h3>
+              <p>Complete payment via Venmo or PayPal to reserve Pastor Jeff.</p>
+            </div>
           </div>
         </div>
       </section>
