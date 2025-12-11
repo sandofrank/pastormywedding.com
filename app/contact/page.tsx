@@ -190,15 +190,11 @@ ${name} & ${partner}`;
 
               <div className="info-block">
                 <h3>Payment</h3>
-                <p>Secure your date with Venmo or PayPal.</p>
+                <p>Secure your date with Zelle.</p>
                 <div className="qr-codes-inline">
                   <div className="qr-item">
-                    <Image src="/images/qr-venmo.png" alt="Venmo QR Code" width={100} height={100} />
-                    <span>Venmo</span>
-                  </div>
-                  <div className="qr-item">
-                    <Image src="/images/qr-paypal.png" alt="PayPal QR Code" width={100} height={100} />
-                    <span>PayPal</span>
+                    <Image src="/images/qr-zelle.png" alt="Zelle QR Code" width={100} height={100} />
+                    <span>Zelle</span>
                   </div>
                 </div>
               </div>

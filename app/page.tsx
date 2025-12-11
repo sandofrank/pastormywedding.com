@@ -126,7 +126,7 @@ export default function Home() {
             <Link href="/contact#payment" className="process-step">
               <div className="step-number">3</div>
               <h3>Payment</h3>
-              <p>Secure your date with payment via Venmo or PayPal.</p>
+              <p>Secure your date with payment via Zelle.</p>
             </Link>
           </div>
 

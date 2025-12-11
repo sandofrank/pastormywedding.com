@@ -57,7 +57,7 @@ export default function TermsPage() {
             <h3>Booking and Payment</h3>
             <ul>
               <li>
-                Wedding dates are secured upon receipt of payment via Venmo or PayPal as indicated
+                Wedding dates are secured upon receipt of payment via Zelle as indicated
                 on our website.
               </li>
               <li>
@@ -112,7 +112,7 @@ export default function TermsPage() {
             <h2>7. Third-Party Links</h2>
             <p>
               Our website may contain links to third-party websites, including payment processors
-              (Venmo, PayPal). These links are provided for your convenience. We do not endorse or
+              (Zelle). These links are provided for your convenience. We do not endorse or
               assume responsibility for the content, privacy policies, or practices of any third-party
               sites. You access third-party websites at your own risk.
             </p>
