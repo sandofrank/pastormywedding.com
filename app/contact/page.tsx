@@ -15,6 +15,8 @@ export default function ContactPage() {
     const phone = formData.get("phone") as string;
     const date = formData.get("date") as string;
     const time = formData.get("time") as string;
+    const rehearsalDate = formData.get("rehearsalDate") as string;
+    const rehearsalTime = formData.get("rehearsalTime") as string;
     const venue = formData.get("venue") as string;
     const packageType = formData.get("package") as string;
     const message = formData.get("message") as string;
@@ -35,6 +37,8 @@ COUPLE INFORMATION:
 WEDDING DETAILS:
 - Wedding Date: ${date}
 - Ceremony Time: ${time || "TBD"}
+- Rehearsal Date: ${rehearsalDate || "N/A"}
+- Rehearsal Time: ${rehearsalTime || "N/A"}
 - Venue: ${venue || "TBD"}
 - Package Interest: ${packageType || "Not selected"}
 
@@ -98,6 +102,17 @@ ${name} & ${partner}`;
                   <div className="form-group">
                     <label htmlFor="time">Ceremony Time</label>
                     <input type="time" id="time" name="time" />
+                  </div>
+                </div>
+
+                <div className="form-row">
+                  <div className="form-group">
+                    <label htmlFor="rehearsalDate">Rehearsal Date (if applicable)</label>
+                    <input type="date" id="rehearsalDate" name="rehearsalDate" />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="rehearsalTime">Rehearsal Time</label>
+                    <input type="time" id="rehearsalTime" name="rehearsalTime" />
                   </div>
                 </div>
 
