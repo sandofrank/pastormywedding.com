@@ -29,10 +29,10 @@ export default function BioPage() {
           priority
           className="bio-hero-family-img"
         />
-        <div className="bio-hero-overlay">
-          <h1>Meet Pastor Jeff &amp; Family</h1>
-          <p>Your trusted wedding officiant in Temecula Wine Country &amp; The Villages, FL</p>
-        </div>
+      </section>
+      <section className="bio-hero-caption">
+        <h1>Meet Pastor Jeff &amp; Family</h1>
+        <p>Your trusted wedding officiant in Temecula Wine Country &amp; The Villages, FL</p>
       </section>
 
       <section className="section">

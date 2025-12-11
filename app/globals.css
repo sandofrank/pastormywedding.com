@@ -1169,31 +1169,21 @@ img {
   object-position: center top;
 }
 
-.bio-hero-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 2rem;
+.bio-hero-caption {
+  background: var(--color-primary);
   color: white;
   text-align: center;
+  padding: 1.5rem 1rem;
 }
 
-.bio-hero-overlay h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  background: rgba(0,0,0,0.75);
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
+.bio-hero-caption h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
 }
 
-.bio-hero-overlay p {
+.bio-hero-caption p {
   font-size: 1.1rem;
-  background: rgba(0,0,0,0.75);
-  padding: 0.4rem 1rem;
-  border-radius: 4px;
+  opacity: 0.9;
 }
 
 /* Reviews page hero */
