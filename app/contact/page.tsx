@@ -193,7 +193,7 @@ ${name} & ${partner}`;
                 <p>Secure your date with Zelle.</p>
                 <div className="qr-codes-inline">
                   <div className="qr-item">
-                    <Image src="/images/qr-zelle.png" alt="Zelle QR Code" width={100} height={100} />
+                    <Image src="/images/qr-zelle.png" alt="Zelle QR Code" width={120} height={120} />
                     <span>Zelle</span>
                   </div>
                 </div>
