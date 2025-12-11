@@ -252,7 +252,7 @@ img {
   background: linear-gradient(135deg, rgba(44,62,80,0.7), rgba(139,115,85,0.6)),
               url('/images/hero-wedding.jpg') center/cover no-repeat fixed;
   color: var(--color-white);
-  padding: 6rem 1.5rem;
+  padding: 4rem 1.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -360,7 +360,7 @@ img {
 
 /* ========== SECTIONS ========== */
 .section {
-  padding: 6rem 0;
+  padding: 4rem 0;
   position: relative;
 }
 
@@ -430,7 +430,7 @@ img {
 
 .service-card {
   background: var(--color-white);
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   text-align: center;
   border-radius: 20px;
   box-shadow: var(--shadow-soft);
@@ -596,7 +596,7 @@ img {
 
 .process-step {
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   position: relative;
   z-index: 1;
   background: var(--color-bg);
@@ -644,7 +644,7 @@ img {
 
 .review-card {
   background: var(--color-white);
-  padding: 2.5rem;
+  padding: 1.75rem;
   border-radius: 20px;
   box-shadow: var(--shadow-soft);
   position: relative;
@@ -708,8 +708,8 @@ img {
 }
 
 .vows-section {
-  margin-bottom: 3rem;
-  padding: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
   background: var(--color-white);
   border-radius: 16px;
   box-shadow: var(--shadow-soft);
@@ -748,7 +748,7 @@ img {
 
 .vows-section blockquote {
   background: linear-gradient(135deg, var(--color-bg-alt), var(--color-bg));
-  padding: 2rem;
+  padding: 1.5rem;
   border-left: 4px solid var(--color-accent);
   border-radius: 0 12px 12px 0;
   margin: 1.5rem 0;
@@ -1057,7 +1057,7 @@ img {
   background: linear-gradient(135deg, rgba(44,62,80,0.85), rgba(139,115,85,0.75)),
               url('/images/banner-bg.jpg') center/cover no-repeat fixed;
   color: var(--color-white);
-  padding: 4rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   position: relative;
 }
 
@@ -1111,9 +1111,9 @@ img {
 
 /* Page-specific Hero Images */
 .page-hero-image {
-  min-height: 50vh;
-  padding-top: calc(var(--header-height) + 4rem);
-  padding-bottom: 4rem;
+  min-height: 40vh;
+  padding-top: calc(var(--header-height) + 2.5rem);
+  padding-bottom: 2.5rem;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1275,7 +1275,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem;
+  padding: 3rem;
   background: var(--color-bg-alt);
 }
 
@@ -1372,7 +1372,7 @@ img {
   }
 
   .page-hero-image {
-    min-height: 40vh;
+    min-height: 35vh;
     background-attachment: scroll;
   }
 }
@@ -1483,7 +1483,7 @@ img {
   }
 
   .section {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
   }
 
   .section-header {
@@ -1500,8 +1500,8 @@ img {
   }
 
   .banner {
-    min-height: 30vh;
-    padding: 3rem 1rem;
+    min-height: 20vh;
+    padding: 2rem 1rem;
     background-attachment: scroll;
   }
 
