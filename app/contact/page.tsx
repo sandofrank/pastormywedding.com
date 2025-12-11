@@ -194,14 +194,14 @@ ${name} & ${partner}`;
 
             <div className="contact-card" id="payment">
               <h3>Payment Options</h3>
-              <p>Secure your date with payment via Venmo or PayPal.</p>
+              <p>Secure your date with Venmo or PayPal.</p>
               <div className="qr-codes">
                 <div className="qr-code">
-                  <Image src="/images/qr-venmo.png" alt="Venmo QR Code" width={100} height={100} />
+                  <Image src="/images/qr-venmo.png" alt="Venmo QR Code" width={80} height={80} />
                   <p>Venmo</p>
                 </div>
                 <div className="qr-code">
-                  <Image src="/images/qr-paypal.png" alt="PayPal QR Code" width={100} height={100} />
+                  <Image src="/images/qr-paypal.png" alt="PayPal QR Code" width={80} height={80} />
                   <p>PayPal</p>
                 </div>
               </div>

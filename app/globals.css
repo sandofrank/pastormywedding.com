@@ -841,6 +841,8 @@ img {
 }
 
 .contact-card .qr-codes {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-top: 0.5rem;
   gap: 1rem;
