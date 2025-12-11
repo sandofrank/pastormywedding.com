@@ -20,19 +20,12 @@ export const metadata: Metadata = {
 export default function BioPage() {
   return (
     <main>
-      {/* Family Photo Hero */}
-      <section className="bio-hero-family">
-        <Image
-          src="/images/family.jpg"
-          alt="Pastor Jeff Johnson and his family"
-          fill
-          priority
-          className="bio-hero-family-img"
-        />
-      </section>
-      <section className="bio-hero-caption">
-        <h1>Meet Pastor Jeff &amp; Family</h1>
-        <p>Your trusted wedding officiant in Temecula Wine Country &amp; The Villages, FL</p>
+      {/* Hero with jeff2 photo */}
+      <section className="page-hero-image page-hero-bio">
+        <div className="container">
+          <h1>About Pastor Jeff Johnson</h1>
+          <p>Your trusted wedding officiant in Temecula Wine Country &amp; The Villages, FL</p>
+        </div>
       </section>
 
       <section className="section">
@@ -40,7 +33,7 @@ export default function BioPage() {
           <div className="about-content">
             <div className="about-image">
               <Image
-                src="/images/pastor-jeff.jpg"
+                src="/images/jeff2.jpg"
                 alt="Pastor Jeff Johnson - Wedding Officiant"
                 width={500}
                 height={400}
@@ -84,6 +77,21 @@ export default function BioPage() {
                 I work closely with each couple to ensure your special day is exactly as you envision it.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Family Photo Section */}
+      <section className="section section-alt">
+        <div className="container text-center">
+          <h2>The Johnson Family</h2>
+          <div className="family-photo-large">
+            <Image
+              src="/images/family.jpg"
+              alt="Pastor Jeff Johnson and his family"
+              width={900}
+              height={500}
+            />
           </div>
         </div>
       </section>
