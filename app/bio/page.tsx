@@ -81,30 +81,29 @@ export default function BioPage() {
         </div>
       </section>
 
-      {/* Family Photo Section */}
+      {/* Family Photo + CTA Side by Side */}
       <section className="section section-alt">
-        <div className="container text-center">
-          <h2>The Johnson Family</h2>
-          <div className="family-photo-large">
-            <Image
-              src="/images/family.jpg"
-              alt="Pastor Jeff Johnson and his family"
-              width={900}
-              height={500}
-            />
+        <div className="container">
+          <div className="bio-bottom-layout">
+            <div className="family-photo-side">
+              <h2>The Johnson Family</h2>
+              <Image
+                src="/images/family.jpg"
+                alt="Pastor Jeff Johnson and his family"
+                width={600}
+                height={400}
+              />
+            </div>
+            <div className="bio-cta-side">
+              <h2>Ready to Meet Pastor Jeff?</h2>
+              <p>
+                Contact us today to schedule a consultation and discuss your wedding ceremony.
+              </p>
+              <Link href="/contact" className="btn">
+                Schedule Your Wedding
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section className="section section-dark">
-        <div className="container text-center">
-          <h2>Ready to Meet Pastor Jeff?</h2>
-          <p className="section-subtitle">
-            Contact us today to schedule a consultation and discuss your wedding ceremony.
-          </p>
-          <Link href="/contact" className="btn">
-            Schedule Your Wedding
-          </Link>
         </div>
       </section>
     </main>

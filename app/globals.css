@@ -1159,17 +1159,47 @@ img {
   background-image: url('/images/jeff1.jpg');
 }
 
-/* Family photo section */
-.family-photo-large {
-  margin-top: 1.5rem;
-  border-radius: 8px;
-  overflow: hidden;
+/* Bio bottom layout - family photo + CTA side by side */
+.bio-bottom-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
 }
 
-.family-photo-large img {
+.family-photo-side h2 {
+  margin-bottom: 1rem;
+}
+
+.family-photo-side img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.bio-cta-side {
+  text-align: center;
+  padding: 2rem;
+}
+
+.bio-cta-side h2 {
+  margin-bottom: 1rem;
+}
+
+.bio-cta-side p {
+  margin-bottom: 1.5rem;
+  color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+  .bio-bottom-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .bio-cta-side {
+    padding: 1rem 0;
+  }
 }
 
 /* Reviews page hero */
