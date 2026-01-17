@@ -124,30 +124,61 @@ const jsonLd = {
         itemOffered: {
           "@type": "Service",
           name: "Wedding Ceremony",
-          description: "Complete wedding ceremony without rehearsal",
+          description: "Complete wedding ceremony without rehearsal. Personalized vows and ceremony tailored to your preferences.",
+          serviceType: "Wedding Officiant",
+          provider: {
+            "@type": "Person",
+            name: "Pastor Jeff Johnson",
+          },
+          areaServed: ["Temecula", "Murrieta", "Menifee", "The Villages FL"],
+          availableChannel: {
+            "@type": "ServiceChannel",
+            serviceLocation: {
+              "@type": "Place",
+              name: "Your Wedding Venue",
+            },
+          },
         },
         price: "400",
         priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+        validFrom: "2024-01-01",
       },
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
           name: "Wedding Ceremony with Rehearsal",
-          description: "Full wedding ceremony plus rehearsal",
+          description: "Full wedding ceremony plus rehearsal to ensure your special day goes smoothly.",
+          serviceType: "Wedding Officiant",
+          provider: {
+            "@type": "Person",
+            name: "Pastor Jeff Johnson",
+          },
+          areaServed: ["Temecula", "Murrieta", "Menifee", "The Villages FL"],
         },
         price: "500",
         priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+        validFrom: "2024-01-01",
       },
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
           name: "Extended Wedding Package",
-          description: "Wedding ceremony with rehearsal plus additional location fee",
+          description: "Wedding ceremony with rehearsal plus additional location fee for venues outside the immediate area.",
+          serviceType: "Wedding Officiant",
+          provider: {
+            "@type": "Person",
+            name: "Pastor Jeff Johnson",
+          },
+          areaServed: ["Southern California", "Central Florida"],
         },
         price: "600",
         priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+        validFrom: "2024-01-01",
       },
     ],
   },
@@ -158,6 +189,54 @@ const jsonLd = {
     bestRating: "5",
     worstRating: "1",
   },
+};
+
+// FAQ Schema for SEO
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How much does a wedding officiant cost in Temecula?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pastor Jeff Johnson offers three wedding officiant packages: Wedding Ceremony ($400) includes a complete personalized ceremony; Wedding Ceremony with Rehearsal ($500) adds a rehearsal to ensure your day goes smoothly; Extended Package ($600) includes rehearsal plus additional location fee for venues outside the immediate Temecula area.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What areas does Pastor Jeff serve as a wedding officiant?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pastor Jeff Johnson serves as a wedding officiant in two primary regions: Temecula Wine Country and Southern California (including Murrieta, Menifee, Wildomar, Lake Elsinore, Fallbrook, Hemet, and San Diego), as well as The Villages, Florida (32162) and Central Florida.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Pastor Jeff perform religious and non-religious ceremonies?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Pastor Jeff Johnson performs both Christian wedding ceremonies and non-denominational ceremonies. Each ceremony is personalized and tailored to the couple's preferences, whether you want a traditional religious service or a secular celebration of your love.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do I book Pastor Jeff for my wedding?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Booking Pastor Jeff is simple: First, contact us with your preferred wedding date to check availability. Second, fill out the wedding information form with ceremony details. Third, secure your date with payment via Zelle. We recommend booking early, especially for popular wedding dates in Temecula Wine Country.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long has Pastor Jeff been officiating weddings?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pastor Jeff Johnson has been a trusted wedding officiant for over 20 years, officiating hundreds of weddings throughout Temecula Wine Country, Southern California, and The Villages, Florida. He brings warmth, professionalism, and a personal touch to every ceremony.",
+      },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -178,6 +257,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </head>
       <body>
