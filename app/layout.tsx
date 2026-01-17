@@ -70,6 +70,10 @@ export const metadata: Metadata = {
       "Pastor Jeff Johnson - Trusted wedding officiant for over 20 years serving Temecula, CA and The Villages, FL.",
     images: ["/images/pastor-jeff.jpg"],
   },
+  verification: {
+    // Add Google Search Console verification code here
+    // google: 'your-google-verification-code',
+  },
   robots: {
     index: true,
     follow: true,
