@@ -9,7 +9,6 @@ export default function CookieConsent() {
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
     if (!consent) {
-      // Small delay to prevent flash on page load
       const timer = setTimeout(() => setShowBanner(true), 500);
       return () => clearTimeout(timer);
     }
@@ -28,18 +27,30 @@ export default function CookieConsent() {
   if (!showBanner) return null;
 
   return (
-    <div className="cookie-banner" role="dialog" aria-label="Cookie consent">
-      <div className="cookie-content">
-        <p>
+    <div
+      className="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 px-6 z-[9999] shadow-[0_-4px_20px_rgba(0,0,0,0.15)] animate-slide-up"
+      role="dialog"
+      aria-label="Cookie consent"
+    >
+      <div className="max-w-[var(--max-width)] mx-auto flex items-center justify-between gap-6 flex-wrap">
+        <p className="flex-1 min-w-[280px] m-0 text-[0.95rem] leading-relaxed">
           We use essential cookies to ensure our website functions properly. By continuing to use
           our site, you consent to our use of cookies. Learn more in our{" "}
-          <Link href="/privacy-policy">Privacy Policy</Link>.
+          <Link href="/privacy-policy" className="text-accent underline hover:text-accent-light">
+            Privacy Policy
+          </Link>.
         </p>
-        <div className="cookie-buttons">
-          <button onClick={acceptCookies} className="cookie-btn cookie-btn-accept">
+        <div className="flex gap-3 shrink-0">
+          <button
+            onClick={acceptCookies}
+            className="py-2.5 px-6 border-none rounded-full text-sm font-medium cursor-pointer transition-all duration-300 min-h-11 bg-accent text-white hover:bg-accent-light"
+          >
             Accept
           </button>
-          <button onClick={declineCookies} className="cookie-btn cookie-btn-decline">
+          <button
+            onClick={declineCookies}
+            className="py-2.5 px-6 border border-white/40 rounded-full text-sm font-medium cursor-pointer transition-all duration-300 min-h-11 bg-transparent text-white hover:bg-white/10 hover:border-white/60"
+          >
             Decline
           </button>
         </div>

@@ -56,80 +56,136 @@ ${name} & ${partner}`;
 
   return (
     <main>
-      <section className="page-hero-image page-hero-contact">
-        <div className="container">
-          <h1>Schedule Your Wedding</h1>
-          <p>Book Pastor Jeff in Temecula Wine Country or The Villages, FL</p>
+      <section className="min-h-[50vh] flex items-center justify-center text-center bg-[linear-gradient(135deg,rgba(44,62,80,0.8),rgba(139,115,85,0.7)),url('/images/contact-hero.jpg')] bg-cover bg-center text-white py-24 px-6">
+        <div className="max-w-[var(--max-width)] mx-auto px-6">
+          <h1 className="!text-white text-4xl md:text-5xl mb-4 [text-shadow:2px_4px_8px_rgba(0,0,0,0.4)] animate-fade-in-up">
+            Schedule Your Wedding
+          </h1>
+          <p className="text-xl md:text-2xl italic opacity-95 animate-fade-in-up-delay font-serif">
+            Book Pastor Jeff in Temecula Wine Country or The Villages, FL
+          </p>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="contact-layout">
+      <section className="py-16">
+        <div className="max-w-[var(--max-width)] mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12">
             {/* Left: Form */}
-            <div className="contact-form-side">
-              <h2>Check Availability</h2>
-              <p className="form-intro">Fill out the form and we&apos;ll get back to you within 24 hours.</p>
+            <div>
+              <h2 className="mb-4 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-[60px] after:h-[3px] after:bg-gradient-to-r after:from-accent after:to-accent-light after:rounded">
+                Check Availability
+              </h2>
+              <p className="text-text-light mb-6">Fill out the form and we&apos;ll get back to you within 24 hours.</p>
 
-              <form onSubmit={handleSubmit}>
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="name">Bride&apos;s Name *</label>
-                    <input type="text" id="name" name="name" required />
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-primary mb-1.5">Bride&apos;s Name *</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none"
+                    />
                   </div>
-                  <div className="form-group">
-                    <label htmlFor="partner">Groom&apos;s Name *</label>
-                    <input type="text" id="partner" name="partner" required />
+                  <div>
+                    <label htmlFor="partner" className="block text-sm font-medium text-primary mb-1.5">Groom&apos;s Name *</label>
+                    <input
+                      type="text"
+                      id="partner"
+                      name="partner"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none"
+                    />
                   </div>
                 </div>
 
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-primary mb-1.5">Email Address *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none"
+                    />
                   </div>
-                  <div className="form-group">
-                    <label htmlFor="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" required />
-                  </div>
-                </div>
-
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="date">Wedding Date *</label>
-                    <input type="date" id="date" name="date" required />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="time">Ceremony Time</label>
-                    <input type="time" id="time" name="time" />
-                  </div>
-                </div>
-
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="rehearsalDate">Rehearsal Date (if applicable)</label>
-                    <input type="date" id="rehearsalDate" name="rehearsalDate" />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="rehearsalTime">Rehearsal Time</label>
-                    <input type="time" id="rehearsalTime" name="rehearsalTime" />
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-primary mb-1.5">Phone Number *</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none"
+                    />
                   </div>
                 </div>
 
-                <div className="form-group">
-                  <label htmlFor="venue">Venue Name &amp; Location</label>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="date" className="block text-sm font-medium text-primary mb-1.5">Wedding Date *</label>
+                    <input
+                      type="date"
+                      id="date"
+                      name="date"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="time" className="block text-sm font-medium text-primary mb-1.5">Ceremony Time</label>
+                    <input
+                      type="time"
+                      id="time"
+                      name="time"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="rehearsalDate" className="block text-sm font-medium text-primary mb-1.5">Rehearsal Date (if applicable)</label>
+                    <input
+                      type="date"
+                      id="rehearsalDate"
+                      name="rehearsalDate"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="rehearsalTime" className="block text-sm font-medium text-primary mb-1.5">Rehearsal Time</label>
+                    <input
+                      type="time"
+                      id="rehearsalTime"
+                      name="rehearsalTime"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="venue" className="block text-sm font-medium text-primary mb-1.5">Venue Name &amp; Location</label>
                   <input
                     type="text"
                     id="venue"
                     name="venue"
                     placeholder="e.g., Faulkner Winery, Temecula"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none"
                   />
                 </div>
 
-                <div className="form-row">
-                  <div className="form-group">
-                    <label htmlFor="package">Package Interest</label>
-                    <select id="package" name="package">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="package" className="block text-sm font-medium text-primary mb-1.5">Package Interest</label>
+                    <select
+                      id="package"
+                      name="package"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none bg-white"
+                    >
                       <option value="">Select a package...</option>
                       <option value="ceremony">Wedding Ceremony ($400)</option>
                       <option value="ceremony-rehearsal">Wedding + Rehearsal ($500)</option>
@@ -137,9 +193,13 @@ ${name} & ${partner}`;
                       <option value="unsure">Not sure yet</option>
                     </select>
                   </div>
-                  <div className="form-group">
-                    <label htmlFor="referral">How did you hear about us?</label>
-                    <select id="referral" name="referral">
+                  <div>
+                    <label htmlFor="referral" className="block text-sm font-medium text-primary mb-1.5">How did you hear about us?</label>
+                    <select
+                      id="referral"
+                      name="referral"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none bg-white"
+                    >
                       <option value="">Select...</option>
                       <option value="google">Google Search</option>
                       <option value="wedding-wire">Wedding Wire</option>
@@ -151,50 +211,67 @@ ${name} & ${partner}`;
                   </div>
                 </div>
 
-                <div className="form-group">
-                  <label htmlFor="message">Additional Details</label>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-primary mb-1.5">Additional Details</label>
                   <textarea
                     id="message"
                     name="message"
                     rows={3}
                     placeholder="Tell us about your wedding plans or any questions..."
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition-all duration-300 focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none resize-y min-h-[100px]"
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn btn-block">
+                <button
+                  type="submit"
+                  className="w-full py-4 px-10 bg-gradient-to-br from-accent to-accent-light text-white text-base font-medium border-none rounded-full cursor-pointer transition-all duration-400 uppercase tracking-widest shadow-[0_4px_15px_rgba(212,175,55,0.4)] hover:bg-gradient-to-br hover:from-secondary hover:to-secondary-light hover:-translate-y-1 hover:shadow-[0_8px_25px_rgba(139,115,85,0.4)]"
+                >
                   Send Inquiry
                 </button>
               </form>
             </div>
 
             {/* Right: Info */}
-            <div className="contact-info-side">
-              <div className="info-block">
-                <h3>Contact Directly</h3>
-                <a href="tel:951-218-5925" className="contact-link">
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-2xl shadow-[var(--shadow-soft)]">
+                <h3 className="text-xl mb-4 text-primary">Contact Directly</h3>
+                <a
+                  href="tel:951-218-5925"
+                  className="block py-3 px-4 bg-bg-alt rounded-lg text-secondary font-medium mb-3 transition-all duration-300 hover:bg-accent hover:text-white"
+                >
                   (951) 218-5925
                 </a>
-                <a href="mailto:email@pastormywedding.com" className="contact-link">
+                <a
+                  href="mailto:email@pastormywedding.com"
+                  className="block py-3 px-4 bg-bg-alt rounded-lg text-secondary font-medium transition-all duration-300 hover:bg-accent hover:text-white"
+                >
                   email@pastormywedding.com
                 </a>
               </div>
 
-              <div className="info-block">
-                <h3>Pricing</h3>
-                <ul className="pricing-list-simple">
-                  <li><span>Wedding Ceremony</span><strong>$400</strong></li>
-                  <li><span>Wedding + Rehearsal</span><strong>$500</strong></li>
-                  <li><span>Extended Package</span><strong>$600</strong></li>
+              <div className="bg-white p-6 rounded-2xl shadow-[var(--shadow-soft)]">
+                <h3 className="text-xl mb-4 text-primary">Pricing</h3>
+                <ul className="space-y-3">
+                  <li className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="text-text-light">Wedding Ceremony</span>
+                    <strong className="text-accent text-lg">$400</strong>
+                  </li>
+                  <li className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="text-text-light">Wedding + Rehearsal</span>
+                    <strong className="text-accent text-lg">$500</strong>
+                  </li>
+                  <li className="flex justify-between items-center py-2">
+                    <span className="text-text-light">Extended Package</span>
+                    <strong className="text-accent text-lg">$600</strong>
+                  </li>
                 </ul>
               </div>
 
-              <div className="info-block">
-                <h3>Payment</h3>
-                <p>Secure your date with Zelle.</p>
-                <div className="qr-codes-inline">
-                  <div className="qr-item">
-                    <Image src="/images/qr-zelle.png" alt="Zelle QR Code" width={120} height={120} />
-                  </div>
+              <div className="bg-white p-6 rounded-2xl shadow-[var(--shadow-soft)]">
+                <h3 className="text-xl mb-4 text-primary">Payment</h3>
+                <p className="text-text-light mb-4">Secure your date with Zelle.</p>
+                <div className="flex justify-center">
+                  <Image src="/images/qr-zelle.png" alt="Zelle QR Code" width={120} height={120} className="rounded-lg" />
                 </div>
               </div>
             </div>
